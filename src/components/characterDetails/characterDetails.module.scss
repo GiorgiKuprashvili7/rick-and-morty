@@ -32,6 +32,12 @@
       font-weight: 500;
       padding-left: 30px;
       padding-bottom: 50px;
+      li {
+        span {
+          font-weight: 600;
+          color: rgb(135, 123, 210);
+        }
+      }
     }
   }
 }

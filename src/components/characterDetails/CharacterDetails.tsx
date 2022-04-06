@@ -50,7 +50,11 @@ const CharacterDetails = () => {
             <h3>Episodes:</h3>
             <ol>
               {data.character?.episode.map((ep: any) => {
-                return <li key={ep.id}>{ep.name}</li>
+                return (
+                  <li key={ep.id}>
+                    {ep.name} / <span>{ep.episode}</span>
+                  </li>
+                )
               })}
             </ol>
           </div>
