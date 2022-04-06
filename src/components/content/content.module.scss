@@ -1,0 +1,9 @@
+@use '../../assets/scss/variables' as *;
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $max-width;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+}

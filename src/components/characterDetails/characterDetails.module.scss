@@ -1,0 +1,43 @@
+@use '../../assets/scss/variables' as *;
+
+.section {
+  padding-top: 10px;
+}
+
+.homeBtn {
+  font-size: 40px;
+  color: $secondary;
+}
+
+.gridContainer {
+  padding-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  img {
+    width: 100%;
+  }
+  .dataContainer {
+    h1 {
+      font-size: map-get($font-sizes, title);
+    }
+    p {
+      font-size: map-get($font-sizes, normal);
+    }
+    h3 {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+    ol {
+      font-weight: 500;
+      padding-left: 30px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}
